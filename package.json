@@ -1,0 +1,13 @@
+{
+  "name": "nodeapp-for-integration",
+  "version": "1.0.0",
+  "description": "Nodejs & Express app where I am going to test all future integration I will plane to do before real integration in my projects",
+  "main": "server.js",
+  "author": "Micael Die",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
