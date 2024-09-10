@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 // Call Routes
 const generationRoute = require("./routes/generation");
+const emailRoute = require("./routes/email");
 
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
@@ -16,5 +17,6 @@ app.use("/public", express.static("public"));
 
 // Declare routes
 app.use("/generation", generationRoute);
+app.use("/email", emailRoute);
 
 module.exports = app;
